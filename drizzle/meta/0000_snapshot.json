@@ -1,0 +1,53 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {},
+  "enums": {
+    "public.pricing_plan_interval": {
+      "name": "pricing_plan_interval",
+      "values": [
+        "day",
+        "week",
+        "month",
+        "year"
+      ],
+      "schema": "public"
+    },
+    "public.pricing_type": {
+      "name": "pricing_type",
+      "values": [
+        "one_time",
+        "recurring"
+      ],
+      "schema": "public"
+    },
+    "public.subscription_status": {
+      "name": "subscription_status",
+      "values": [
+        "trialing",
+        "active",
+        "canceled",
+        "incomplete",
+        "incomplete_expired",
+        "past_due",
+        "unpaid"
+      ],
+      "schema": "public"
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "tables": {}
+  }
+}
