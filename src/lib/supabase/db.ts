@@ -4,6 +4,8 @@ import * as dotenv from "dotenv";
 import * as schema from "../../../migrations/schema";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
 
+console.log("🔥 DB.TS LOADED");
+
 // Load environment variables
 dotenv.config({ path: ".env" });
 if (!process.env.DATABASE_URL) {
@@ -26,4 +28,5 @@ const migrateDb = async () => {
   }
 };
 export const db = drizzle(client, { schema });
+console.log("DB.TS LOADED");
 migrateDb();
